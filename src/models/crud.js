@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../utils/connection'); 
  
-const crud = sequelize.define('crud', {
+const Crud = sequelize.define('crud', {
 
     first_name: {
         type: DataTypes.STRING(100),
@@ -26,8 +26,8 @@ const crud = sequelize.define('crud', {
     },
     birthday: {
         type: DataTypes.STRING,
-        allowNull: true,
+
     }
 });
 
-module.exports = crud;
+module.exports = Crud;
